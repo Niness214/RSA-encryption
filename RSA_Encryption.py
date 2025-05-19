@@ -48,7 +48,7 @@ def decrypt(ciphertext, d, n):
     return ''.join([chr(pow(char, d, n)) for char in ciphertext])
 
 def authenticate():
-    password = "securepass123"
+    password = "ILoveFormula1!"
     for _ in range(3):
         user_input = input("Enter password to access RSA tool: ")
         if user_input == password:
